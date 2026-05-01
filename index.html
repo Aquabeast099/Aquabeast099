@@ -5,31 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcadia Bits Zone | Tech & Modding</title>
     <style>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            font-family: 'Segoe UI', sans-serif;
+            /* Fondo animado que cambia de color suavemente */
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #00f2fe);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            overflow: hidden;
         }
+
         .container {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
             padding: 40px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.2);
             text-align: center;
-            max-width: 450px;
+            max-width: 400px;
+            /* Resplandor neón alrededor de la tarjeta */
+            border: 2px solid #00f2fe;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
         }
-        h1 { color: #00f2fe; text-transform: uppercase; letter-spacing: 2px; }
-        .subtitle { color: #4facfe; font-weight: bold; margin-bottom: 20px; }
-        .services { text-align: left; background: rgba(0, 0, 0, 0.3); padding: 15px; border-radius: 10px; margin: 20px 0; }
-        .btn { background: linear-gradient(to right, #00f2fe, #4facfe); color: #000; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; }
+
+        h1 {
+            color: #fff;
+            text-shadow: 0 0 10px #00f2fe, 0 0 20px #00f2fe;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #4facfe;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .services {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .btn {
+            background: #00f2fe;
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 0 15px #00f2fe;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px #00f2fe;
+        }
     </style>
 </head>
 <body>
@@ -37,11 +82,11 @@
         <h1>Arcadia Bits Zone</h1>
         <p class="subtitle">Elevando tu tecnología al siguiente nivel</p>
         <div class="services">
-            <p>🚀 <strong>Modding:</strong> PS4, 3DS, Wii y más.</p>
-            <p>💻 <strong>Software:</strong> Mantenimiento y optimización.</p>
+            <p>🛠️ <strong>Modding:</strong> PS4 (GoldHEN) y 3DS (Luma3DS).</p>
+         
         </div>
-        <p>📍 Villanueva, Cortés, Honduras</p>
-        <a href="https://wa.me/50492778445" class="btn">Solicitar Soporte</a>
+        <p>📍 Villanueva, Honduras</p>
+        <a href="https://wa.me/50492778445" class="btn">¡Hablemos por WhatsApp!</a>
     </div>
 </body>
 </html>
